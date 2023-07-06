@@ -3,8 +3,8 @@ require './lib/node'
 
 RSpec.describe Node do 
 
-  describe '#Iteration 1' do
-  
+  describe "#Iteration 1, Node" do
+
     it 'exists with attributes' do 
       node = Node.new("plop")
       expect(node.data).to eq("plop")
