@@ -6,7 +6,7 @@ class LinkedList
   end
 
   def append(data)
-    # @head << Node.new(data) 
+    @head << Node.new(data) 
   end
 
   def count
