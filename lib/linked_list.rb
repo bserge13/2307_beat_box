@@ -10,10 +10,12 @@ class LinkedList
   end
 
   def count
-    require 'pry'; binding.pry
+    if @head.next_node == nil
+      1
+    end
   end
 
   def to_string
-    
+    @head.data 
   end
 end
