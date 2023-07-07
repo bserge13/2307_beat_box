@@ -5,7 +5,7 @@ require './lib/node'
 RSpec.describe LinkedList do 
 
   describe "#Iteration1, LinkedList" do 
-    it 'exists with attributes' do 
+    it 'exists with readable attributes' do 
       list = LinkedList.new
 
       expect(list.head).to eq(nil)
