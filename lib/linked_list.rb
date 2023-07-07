@@ -14,9 +14,11 @@ class LinkedList
   end
 
   def count
-    if @head.next_node == nil
-      1
+    node_counter = 0
+    if @head != nil
+      node_counter += 1
     end
+    node_counter
   end
 
   def to_string

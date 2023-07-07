@@ -10,10 +10,25 @@ RSpec.describe LinkedList do
 
       expect(list.head).to eq(nil)
       list.append("doop")
+      expect(list).to eq(list)
       expect(list.head.data).to eq("doop")
       expect(list.head.next_node).to eq(nil)
       expect(list.count).to eq(1)
       expect(list.to_string).to eq("doop")
+      # require 'pry'; binding.pry
     end
+
+    # it 'adds multiple nodes to lniked list' do
+    #   list = LinkedList.new
+
+    #   expect(list.head).to eq(nil)
+    #   list.append("doop")
+    #   expect(list).to eq(list)
+    #   expect(list.head.data).to eq("doop")
+    #   expect(list.head.next_node).to eq(nil)
+    #   expect(list.count).to eq(1)
+    #   expect(list.to_string).to eq("doop")
+
+    # end
   end
 end
