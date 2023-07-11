@@ -53,7 +53,11 @@ class LinkedList
   end
 
   def third_node_count
-    
+    third_node_count = 0
+    if @head.next_node.next_node != nil
+      third_node_count += 1
+    end
+    third_node_count
   end
 
   def to_string
