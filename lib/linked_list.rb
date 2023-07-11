@@ -52,6 +52,10 @@ class LinkedList
     next_node_count
   end
 
+  def third_node_count
+    
+  end
+
   def to_string
     if @head.next_node == nil 
       head_string
@@ -60,7 +64,6 @@ class LinkedList
     else 
       head_string + " " + next_node_string + " " + third_node_string
     end 
-    
   end
   
   def head_string
