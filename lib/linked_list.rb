@@ -34,6 +34,18 @@ class LinkedList
   end
 
   def to_string
-    @head.data 
+    if @head.next_node == nil 
+      head_string
+    else
+      head_string + " " + next_node_string 
+    end
+  end
+
+  def head_string
+    @head.data
+  end
+
+  def next_node_string
+    @head.next_node.data
   end
 end
