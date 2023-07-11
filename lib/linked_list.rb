@@ -9,7 +9,12 @@ class LinkedList
     if @head == nil 
       @head = Node.new(data) 
     else 
-      @head.next_node = Node.new(data)
+      current_node = @head
+      new_node = Node.new(data)
+      while current_node.next_node != nil
+        current_node = current_node.next_node
+      end
+      current_node.next_node = new_node
     end 
   end
 
@@ -47,5 +52,9 @@ class LinkedList
 
   def next_node_string
     @head.next_node.data
+  end
+
+  def prepend(data)
+    
   end
 end
