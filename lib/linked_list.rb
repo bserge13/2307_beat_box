@@ -44,30 +44,6 @@ class LinkedList
     node_counter
   end
 
-  def head_node_count
-    head_node_count = 0
-    if @head != nil
-      head_node_count += 1
-    end
-    head_node_count
-  end
-
-  def next_node_count
-    next_node_count = 0 
-    if @head.next_node != nil
-      next_node_count += 1
-    end
-    next_node_count
-  end
-
-  def third_node_count
-    third_node_count = 0
-    if @head.next_node.next_node != nil
-      third_node_count += 1
-    end
-    third_node_count
-  end
-
   def to_string
     if @head.next_node == nil 
       head_string
