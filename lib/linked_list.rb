@@ -33,7 +33,15 @@ class LinkedList
   end
 
   def count
-    total_node = head_node_count + next_node_count 
+    node_counter = 0 
+    if @head != nil && @head.next_node == nil 
+      node_counter += 1
+    elsif @head != nil && @head.next_node != nil && @head.next_node.next_node == nil 
+      node_counter += 2
+    elsif @head != nil && @head.next_node != nil && @head.next_node.next_node != nil 
+      node_counter += 3
+    end
+    node_counter
   end
 
   def head_node_count
