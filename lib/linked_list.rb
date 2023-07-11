@@ -31,6 +31,7 @@ class LinkedList
   def insert(position, data)
     # nodes = {:head => 1, :head.next_node = 2, :head.next_node.next_node => 3, :head.next_node.next_node.next_node => 4}
     # if position == nodes.values
+    # reassign position with passed-in data. 
   end
 
   def count
