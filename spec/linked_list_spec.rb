@@ -32,4 +32,20 @@ RSpec.describe LinkedList do
       expect(list.to_string).to eq("doop deep")
     end
   end
+
+  describe "#Iteration 2, LinkedList" do 
+    it 'can add nodes in specific order' do
+      list = LinkedList.new
+
+      list.append("plop")
+      expect(list.to_string).to eq("plop")
+      list.append("suu")
+      expect(list.to_string).to eq("plop suu")
+      list.prepend("dop")
+      expect(list.to_string).to eq("dop plop suu")
+      expect(list.count).to eq(3)
+      list.insert(1, "woo")
+      # expect(list.to_string).to eq("dop woo plop suu")
+    end
+  end
 end
