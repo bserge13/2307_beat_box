@@ -29,7 +29,7 @@ class LinkedList
   end
 
   def insert(position, data)
-
+    # @head = 1, @head.next_node = 2, @head.next_node.next_node = 3, @head.next_node.next_node.next_node = 4 
   end
 
   def count
