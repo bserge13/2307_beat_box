@@ -55,9 +55,10 @@ class LinkedList
   def to_string
     if @head.next_node == nil 
       head_string
-    else
+    elsif @head.next_node != nil
       head_string + " " + next_node_string 
-    end
+    else 
+      head_string + " " + next_node_string + " " + third_node_string
   end
 
   def head_string
